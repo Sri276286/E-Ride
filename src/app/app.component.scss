@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    .nav-bar {
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        line-height: 2;
+        .logo {
+            float: left;
+            h4 {
+                font-size: 18px;
+                display: inline-block;
+                margin: 0;
+                padding-left: 5px;
+            }
+        }
+        .nav-actions {
+            float: right;
+            span.log-in {
+                cursor: pointer;
+                padding-left: 10px;
+                .fa {
+                    padding-right: 6px;
+                }
+            }
+        }
+    }
+    .content-container {
+        padding: 50px 10px 10px;
+        .tab-details {
+            margin-top: 0px;
+            margin-left: -10px;
+            margin-right: -10px;
+            padding: 15px 15px 8px;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            .tabs {
+                span {
+                    margin-right: 15px;
+                    cursor: pointer;
+                    transition: border 2ms ease-out;
+                }
+                .active {
+                    border-bottom: 3px solid deepskyblue;
+                    padding-bottom: 4px;
+                    transition: border 2ms ease-out;
+                }
+            }
+        }
+        .ride-details {
+            margin-top: 10px;
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+    }
+}

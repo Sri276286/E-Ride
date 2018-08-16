@@ -1,0 +1,24 @@
+<div class="container">
+  <nav class="nav-bar">
+    <div class="logo">
+      <i class="logo-icon fa fa-car" aria-hidden="true"></i>
+      <h4>E-Ride</h4>
+    </div>
+    <div class="nav-actions">
+      <span class="log-in" (click)="onLoginClick()">
+        <i class="logo-icon fa fa-user-o" aria-hidden="true"></i>Login
+      </span>
+    </div>
+  </nav>
+  <div class="content-container">
+    <div class="tab-details">
+      <div class="tabs">
+        <span class="take-ride" (click)="onTabClick($event.target, 'takeride')">I Want To Take Ride</span>
+        <span class="share-ride" (click)="onTabClick($event.target, 'shareride')">I Want To Share Ride</span>
+      </div>
+    </div>
+    <div class="ride-details">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

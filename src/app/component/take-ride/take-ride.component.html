@@ -1,0 +1,11 @@
+<div class="take-ride">
+  <div class="tiles" *ngFor="let ride of takeRides">
+      <div class="user-image">
+          <i class="fa fa-user-o"></i>
+      </div>
+      <div class="user-details">
+          <h4>From</h4><span>{{ride.start_location}}</span>
+          <h4>To</h4><span>{{ride.end_location}}</span>
+      </div>
+  </div>
+</div>
