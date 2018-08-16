@@ -1,0 +1,13 @@
+> mongo
+
+> show dbs
+
+> use eride
+
+> show collections
+
+> db.createCollection('rides')
+
+> db.createCollection('users')
+
+> db.createCollection('profiles')

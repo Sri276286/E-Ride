@@ -1,0 +1,166 @@
+// add users
+
+{
+  "first_name": "Srikanth",
+  "last_name": "K",
+  "signum": "zredkar",
+  "mail_id": "srikanth.k@ericsson.com",
+  "contact_number": 7299933974,
+  "address": "Kandanchavadi",
+  "about_me": "This is me!!!",
+  "interested_topics": [
+    "Movies",
+    "Food"
+  ]
+}
+
+{
+  "first_name": "Dhanasekar",
+  "last_name": "S",
+  "signum": "zseldha",
+  "mail_id": "dhanasekar.s@ericsson.com",
+  "contact_number": 8765432109,
+  "address": "Medavakam",
+  "interested_topics": [
+    "Politics",
+    "Movies"
+  ]
+}
+
+{
+  "first_name": "Vikhyath",
+  "last_name": "M",
+  "signum": "zmavikh",
+  "mail_id": "vikhyath.m@ericsson.com",
+  "contact_number": 7654321098,
+  "address": "Thiruvanmiyur",
+  "interested_topics": [
+    "Politics",
+    "Movies"
+  ]
+}
+
+{
+  "first_name": "Abdul",
+  "last_name": "S",
+  "signum": "zabduls",
+  "mail_id": "abdul.s@ericsson.com",
+  "contact_number": 6543210987,
+  "address": "Royapuram",
+  "interested_topics": [
+    "Technology",
+    "Sports"
+  ]
+}
+
+/// Rides
+
+{
+  "signum": "zredkar",
+  "ride_type": "Share",
+  "service_type": "Office",
+  "vehicle_type": "Car",
+  "occurence": "Daily",
+  "details": "I love environment",
+  "start_location": "Velachery",
+  "end_location": "Sp InfoCity",
+  "no_of_seats": 2,
+  "no_of_kms": 12,
+  "price_per_km": 3,
+  "landmarks": [
+    "Baby Nagar",
+    "Tansi Nagar"
+  ],
+  "start_time": "9:30 AM",
+  "end_time": "7:00 PM"
+}
+
+{
+  "signum": "zredkar",
+  "ride_type": "Share",
+  "service_type": "Office",
+  "vehicle_type": "Bike",
+  "occurence": "Daily",
+  "details": "I love environment",
+  "start_location": "Velachery",
+  "end_location": "Sp InfoCity",
+  "no_of_seats": 1,
+  "no_of_kms": 12,
+  "price_per_km": 3,
+  "landmarks": [
+    "Baby Nagar",
+    "Tansi Nagar"
+  ],
+  "start_time": "9:30 AM",
+  "end_time": "7:00 PM"
+}
+
+{
+  "signum": "zredkar",
+  "ride_type": "Take",
+  "service_type": "Office",
+  "vehicle_type": "Bike",
+  "occurence": "Daily",
+  "details": "I love environment",
+  "start_location": "Velachery",
+  "end_location": "Sp InfoCity",
+  "no_of_seats": 1,
+  "no_of_kms": 12,
+  "price_per_km": 3,
+  "landmarks": [
+    "Baby Nagar",
+    "Tansi Nagar"
+  ],
+  "start_time": "9:30 AM",
+  "end_time": "7:00 PM"
+}
+
+{
+  "signum": "zredkar",
+  "ride_type": "Take",
+  "service_type": "Casual",
+  "vehicle_type": "Car",
+  "occurence": "Daily",
+  "details": "I love environment",
+  "start_location": "Velachery",
+  "end_location": "Madurai",
+  "no_of_seats": 2,
+  "no_of_kms": 480,
+  "price_per_km": 2
+}
+
+{
+  "signum": "zseldha",
+  "ride_type": "Share",
+  "service_type": "Office",
+  "vehicle_type": "Car",
+  "occurence": "Daily",
+  "details": "I love environment",
+  "start_location": "Velachery",
+  "end_location": "SP InfoCity",
+  "no_of_seats": 1,
+  "no_of_kms": 18,
+  "price_per_km": 5,
+  "landmarks": [
+    "Baby Nagar",
+    "Tansi Nagar"
+  ],
+  "start_time": "9:30 AM",
+  "end_time": "7:00 PM"
+}
+
+
+/// profile
+
+{
+  "comments": [
+    "Friendly Ride"
+  ],
+  "signum": "zredkar",
+  "no_of_rides_shared": 2,
+  "amount_earned": 500,
+  "no_of_rides_taken": 0,
+  "amount_spent": 0,
+  "rating": 4,
+  "creation_date": "2018-08-15T16:42:20.882Z"
+}
