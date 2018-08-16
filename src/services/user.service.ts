@@ -10,6 +10,10 @@ export class UserService {
         return this.http.get('http://localhost:3000/api/eride/user/get');
     }
 
+    getUser(signum) {
+        return this.http.get(`http://localhost:3000/api/eride/user/get/${signum}`);
+    }
+
     addUser(user: User) {
         let headers = new HttpHeaders();
         headers.append('Content-Type', 'application/json');
@@ -24,5 +28,11 @@ export class UserService {
 
     deleteUser(signum: string) {
         return this.http.delete(`http://localhost:3000/api/eride/user/delete/${signum}`);
+    }
+
+    validateUser(loginObj) {
+        let headers = new HttpHeaders();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post(`http://localhost:3000/api/eride/user/get`, loginObj, { headers: headers });
     }
 }

@@ -9,9 +9,10 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'app';
+  isLoggedIn = false;
 
   constructor(private elementRef: ElementRef,
-  private _router: Router) { }
+    private _router: Router) { }
   ngOnInit() {
 
   }
@@ -19,7 +20,7 @@ export class AppComponent implements OnInit, AfterViewInit {
    * login event goes here
    */
   onLoginClick() {
-
+    this._router.navigate(['/login']);
   }
   /**
    * tab click event

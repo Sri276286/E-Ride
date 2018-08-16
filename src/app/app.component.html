@@ -5,8 +5,11 @@
       <h4>E-Ride</h4>
     </div>
     <div class="nav-actions">
-      <span class="log-in" (click)="onLoginClick()">
+      <span class="log-in" (click)="onLoginClick()" *ngIf="!isLoggedIn">
         <i class="logo-icon fa fa-user-o" aria-hidden="true"></i>Login
+      </span>
+      <span *ngIf="isLoggedIn">
+        {{}}
       </span>
     </div>
   </nav>

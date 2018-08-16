@@ -57,4 +57,21 @@ userRouter.route('/eride/user/delete/:signum').delete(function (req, res) {
     });
 });
 
+// validate a user
+userRouter.route('/eride/user/get').post(function (req, res) {
+    var userObj = req.body;
+    console.log('userobj ', userObj);
+    User.validateUser(userObj, function (err, user) {
+        if (err) {
+            throw err;
+        }
+
+        if (user) {
+            console.log('user ', user);
+            res.status(200).send({ '1': 'OK' });
+        }
+    });
+
+});
+
 module.exports = userRouter;

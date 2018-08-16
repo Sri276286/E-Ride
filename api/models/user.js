@@ -19,6 +19,10 @@ var userSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    password: {
+        type: Number,
+        required: true
+    },
     contact_number: {
         type: Number,
         required: true
@@ -69,6 +73,7 @@ module.exports.editUser = function (signum, user, options, callback) {
         last_name: user.last_name,
         signum: signum,
         mail_id: user.mail_id,
+        password: user.password,
         contact_number: user.contact_number,
         address: user.address,
         about_me: user.about_me,
@@ -83,4 +88,13 @@ module.exports.deleteUser = function (signum, callback) {
         signum: signum
     };
     User.remove(query, callback);
+}
+
+// Validate a user
+module.exports.validateUser = function (user, callback) {
+    var query = {
+        signum: user.signum,
+        password: user.password
+    };
+    User.findOne(query, callback);
 }

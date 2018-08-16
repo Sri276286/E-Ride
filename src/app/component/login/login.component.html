@@ -1,0 +1,22 @@
+<form (ngSubmit)="validateUser()" #loginForm="ngForm">
+    <div class="imgcontainer">
+      <img src="assets/user.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="signum">
+        <b>Signum</b>
+      </label>
+      <input type="text" placeholder="Enter Signum" name="signum" ngModel #signum="ngModel" required>
+  
+      <label for="password">
+        <b>Password</b>
+      </label>
+      <input type="password" placeholder="Enter Password" name="password" ngModel #password="ngModel" required>
+  
+      <button type="submit" [disabled]="!loginForm.valid">Login</button>
+      <span class="psw">
+        <a href="#">Forgot password?</a>
+      </span>
+    </div>
+  </form>
